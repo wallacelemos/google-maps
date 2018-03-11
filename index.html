@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Google Maps APIs</title>
+		<!-- Carregar css -->
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
+	</head>
+	<body>
+		<!-- Texto para endereco completo -->
+		<h3 id="localMapa"></h3>
+		
+		<!-- Mapa -->
+		<div id="googleMap"></div>
+		
+		<p>*Arraste o marcador e solte no local desejado</p>
+		
+		<hr />
+		
+		<form id="formLocalizar" name="dados" onsubmit="return false;">
+			<div class="col-50">
+				<label for="inputEndereco">Endereço</label>
+				<input id="inputEndereco" type="text" name="endereco" />
+			</div><!--
+			--><div class="col-25">
+				<label for="inputNumero">Número</label>
+				<input id="inputNumero" type="text" name="numero" />
+			</div><!--
+			--><div class="col-25">			
+				<label for="inputCEP">CEP</label>
+				<input id="inputCEP" type="text" name="cep" />
+			</div><!--
+			--><div class="col-25">
+				<label for="inputBairro">Bairro</label>
+				<input id="inputBairro" type="text" name="bairro" />
+			</div><!--
+			--><div class="col-25">
+				<label for="inputCidade">Cidade</label>
+				<input id="inputCidade" type="text" name="cidade" />
+			</div><!--
+			--><div class="col-25">
+				<label for="inputEstado">Estado</label>
+				<input id="inputEstado" type="text" name="estado" />
+			</div><!--
+			--><div class="col-25 text-right">
+				<button type="submit">Localizar no Mapa</button>
+			</div>
+		</form>
+		
+		<!-- Carregar javascript -->
+		<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js"></script>
+		<script type="text/javascript" src="script.js"></script>
+	</body>
+</html>
